@@ -89,6 +89,7 @@ class Marketplace:
 
         returns True or False. If the caller receives False, it should wait and then try again
         """
+        # Search
         for curr_producer_list in self.marketplace_items.values():
             for offered_product in curr_producer_list:
                 if offered_product == product:
