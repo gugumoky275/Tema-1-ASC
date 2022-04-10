@@ -5,8 +5,8 @@ Computer Systems Architecture Course
 Assignment 1
 March 2021
 """
-
-from threading import Thread
+from threading import Thread, Lock
+from time import sleep
 
 
 class Consumer(Thread):
@@ -31,13 +31,30 @@ class Consumer(Thread):
         @type kwargs:
         @param kwargs: other arguments that are passed to the Thread's __init__()
         """
-        Thread.__init__(self, kwargs=kwargs)
+        Thread.__init__(self, **kwargs)
         self.carts = carts
         self.marketplace = marketplace
         self.retry_wait_time = retry_wait_time
+        self.printing_lock = Lock()
 
     def run(self):
+        # Get your customer id (cart_id, even though you have more sets of operations)
+        cart_id = self.marketplace.new_cart()
+
+        # Get each set of operations before placing an order (here called cart) and
+        # for each of respective action's count do that action without waiting additionally.
+        # When adding to cart check if market has respective product, if not retry after
+        # retry_wait_time
         for cart in self.carts:
-            cart_id = self.marketplace.new_cart()
             for action in cart:
-                print(action)
+                for _ in range(action['quantity']):
+                    if action['type'] == 'add':
+                        while not self.marketplace.add_to_cart(cart_id, action['product']):
+                            sleep(self.retry_wait_time)
+                    elif action['type'] == 'remove':
+                        self.marketplace.remove_from_cart(cart_id, action['product'])
+            cart_product_list = self.marketplace.place_order(cart_id)
+            # Print items, use a lock (two should not speak at the same time)
+            with self.marketplace.print_lock:
+                for product in cart_product_list:
+                    print(self.name, 'bought', product)

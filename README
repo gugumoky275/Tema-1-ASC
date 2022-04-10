@@ -1,1 +1,12 @@
-First test for git
+@Copyright Baciu Alexandru-Victor 332CA
+Tema 1 ASC Martie-Aprilie 2022
+
+README incomplet pt teste si commit-uri pe git
+
+Sincronizere get_id-uri pentru ca au un camp int ce trebuie incrementat si citit dupa (prin return)
+de mai multe threaduri simultan
+
+
+[1] https://ocw.cs.pub.ro/courses/asc
+[2] https://docs.python.org/3/faq/library.html#what-kinds-of-global-value-mutation-are-thread-safe
+[3] https://stackoverflow.com/questions/1312331/using-a-global-dictionary-with-threads-in-python
