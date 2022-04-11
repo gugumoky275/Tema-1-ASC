@@ -1,12 +1,81 @@
 @Copyright Baciu Alexandru-Victor 332CA
 Tema 1 ASC Martie-Aprilie 2022
 
-README incomplet pt teste si commit-uri pe git
+**********) Organizare
 
-Sincronizere get_id-uri pentru ca au un camp int ce trebuie incrementat si citit dupa (prin return)
-de mai multe threaduri simultan
+*) Pentru functionalitatea temei am implementat functiile cerute in cele 3 fisiere
+(marketplace.py, consumer.pt, producer.py). Problema principala vizata de aceasta tema este
+bineinteles sincronizarea threadurilor di rezolvarea race condition-urilor. In acest sens:
+Structurile mele de date sunt:
 
+- Pentru producatori un dictionar unde cheia este id-ul producatorului si valoarea este un
+dictionar cu 2 elemente: un Lock() si o lista de produse. Lock-ul este folosit pentru accesul la
+lista de produse anterior mentionata, iar fiecare element al listei este defapt o lista cu 2
+elemente: [carat_id, product], unde product este produsul efectiv iar cart_id este id-ul
+consumatorului/cosului care rezerva produsul (-1 pentru nerezervat).
 
-[1] https://ocw.cs.pub.ro/courses/asc
-[2] https://docs.python.org/3/faq/library.html#what-kinds-of-global-value-mutation-are-thread-safe
-[3] https://stackoverflow.com/questions/1312331/using-a-global-dictionary-with-threads-in-python
+- Pentru consumatori un dictionaar unde cheia este id-ul consumatorului si valoarea este lista sa
+de produse din cos.
+
+Conform documentatiei (vezi bibliografia) am considerat o implementare de python cu GIL
+(global interpreter lock) astfel ca anumite operatii sunt atomice:
+append-uri si removeuri pe liste
+adaugari in dictionare
+
+Totusi iterarea printr-un dictionar in timp ce se adauga perechi cheie-valoare pot fi problematice
+avand un comportament nedeterminat, astfel am folosit un Lock() producer_lists_lock pentru a
+proteja dictionarul producatorilor de iterarea prin el de catre consumatori concomitent cu
+adaugarea de elemente la inregistrarea producatorilor.
+Similar am folosit cate un Lock() pentru fiecare lista a fiecarui producator pentru a proteja
+iterarea prin ea si modificarea unor elemente (atat de catre producator cat si de catre oricati
+consumatori) si inserarea in lista de catre producator (inserarea efectiva nu este o problema, cum
+am mai mentionat, dar se insereaza concomitent cu o posibila iterare).
+
+Totodata producer_lists_lock si carts_lock sunt folosite si pentru a proteja contorul id_urilor
+folosite pentru inregistrarea producatorilor/consumatorilor, reprezentate prin 2 variabile interne
+clasei Marketplace care sunt incrementate si returnate posibil concomitent
+
+*) Pentru unittesting am creat intern modulului mrketplace.py clasa TestMarketplace cu metode de
+test pentru fiecare functie din clasa Marketplace.
+pentru testare se ruleaza: python3 -m unittest -v tema/marketplace.py
+
+*) Pentru logging am creat in __init__ -ul clasei Marketplace o variabila sugestiva, inializata
+conform documentatiei care afiseaza la inceputul si sfarsitul fiecarei metode din clasa mentionata
+informatii relevante (parametrii de input/return value daca este cazul)
+
+*) Am folosit pentru print-ul a ce a cumparat consumatorul un Lock pentru a nu avea erori de
+afisare, totodata am evidat logging-ul sub un lock intrucat am invata ca este good practice ca,
+pe cat posibil, operatiile I/O, care consuma resurse I/O, sa nu acapareze Lock-uri principale
+(s-ar sta foarte mult dupa ele).
+
+*) Consider tema utila intrucat este (desi am avut APD semestrul trecut, materie dedicata
+obiectului studiat) prima tema care chiar vizeaza sincronizarea unor resurse/structuri de date.
+Totusi enuntul este incomplet si interpretabil, au fost nevoie de multe interventii pe forum
+pentru a lamuri aspecte ce trebuiau incluse in enunt. Totodata exista si o situatie de Deadlock
+(cel putin) care nu se poate evita conform cerintei (prin respectare flow-ului si a semnaturii
+functiilor), provenita din blocarea elementelor in coada producatorului in loc de a le consuma.
+De exemplu, la testul 3 daca consumatorii 1,2,5 vor, conform unei planificari de executie, sa
+ia toti cate 5 elemente din acelasi timp, dar fiecare blocheaza doar 4, coada producatorului
+(de 12 elemente) este plina, deci acesta nu mai poate produce nimic, consumatorii asteapta dupa
+inca 1 produs dar nu au de unde sa-l ia. Acest lucru este evitat din timpii de asteptare ai
+threadurilor in apelul sleep() alesi convenabil, presupunand o masina de calcul "nu foarte
+inceata".
+
+*) Consider implementarea mea robusta si completa considerand problema propusa
+
+**********) Implementare
+
+*) Enuntul este implementat in totalitate
+
+**********) Resurse utilizate
+
+[1]: Link de Github (repo privat pentru privacy si anti-copiat)
+[2]: Site-ul cursului cu enuntul si laboratoarele 1-3 de multithreading in python (cu multe alte
+resurse)
+[3]: Documentatie operatii thread-safe
+[4]: O alta discutie privind operatiile thread-safe, care mi s-a parut relevanta
+
+[1] https://github.com/gugumoky275/Tema-1-ASC
+[2] https://ocw.cs.pub.ro/courses/asc
+[3] https://docs.python.org/3/faq/library.html#what-kinds-of-global-value-mutation-are-thread-safe
+[4] https://stackoverflow.com/questions/1312331/using-a-global-dictionary-with-threads-in-python

@@ -1,0 +1,166 @@
+2022-04-11 19:33:43,904 - tema.marketplace - INFO - publish is called by producer 14 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:43,904 - tema.marketplace - INFO - publish was called by producer 5 with product Tea(name='Vietnam Oolong', price=10, type='Oolong') and returned True
+2022-04-11 19:33:43,904 - tema.marketplace - INFO - publish was called by producer 14 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,904 - tema.marketplace - INFO - publish is called by producer 44 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:43,905 - tema.marketplace - INFO - publish was called by producer 44 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,905 - tema.marketplace - INFO - publish is called by producer 45 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:43,905 - tema.marketplace - INFO - publish was called by producer 45 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,907 - tema.marketplace - INFO - publish is called by producer 27 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:43,907 - tema.marketplace - INFO - publish is called by producer 40 with product Tea(name='English Breakfast', price=2, type='Black')
+2022-04-11 19:33:43,907 - tema.marketplace - INFO - publish was called by producer 27 with product Tea(name='Jasmine', price=6, type='Green') and returned False
+2022-04-11 19:33:43,907 - tema.marketplace - INFO - publish was called by producer 40 with product Tea(name='English Breakfast', price=2, type='Black') and returned False
+2022-04-11 19:33:43,914 - tema.marketplace - INFO - publish is called by producer 41 with product Tea(name='Pai Mu Tan', price=9, type='White')
+2022-04-11 19:33:43,914 - tema.marketplace - INFO - publish was called by producer 41 with product Tea(name='Pai Mu Tan', price=9, type='White') and returned False
+2022-04-11 19:33:43,922 - tema.marketplace - INFO - publish is called by producer 16 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:43,922 - tema.marketplace - INFO - publish was called by producer 16 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,922 - tema.marketplace - INFO - publish is called by producer 32 with product Tea(name='White Peach', price=5, type='White')
+2022-04-11 19:33:43,922 - tema.marketplace - INFO - publish is called by producer 18 with product Tea(name='English Breakfast', price=2, type='Black')
+2022-04-11 19:33:43,922 - tema.marketplace - INFO - publish was called by producer 18 with product Tea(name='English Breakfast', price=2, type='Black') and returned False
+2022-04-11 19:33:43,922 - tema.marketplace - INFO - publish was called by producer 32 with product Tea(name='White Peach', price=5, type='White') and returned False
+2022-04-11 19:33:43,923 - tema.marketplace - INFO - publish is called by producer 7 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,923 - tema.marketplace - INFO - publish was called by producer 7 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,931 - tema.marketplace - INFO - publish is called by producer 33 with product Tea(name='Pai Mu Tan', price=9, type='White')
+2022-04-11 19:33:43,932 - tema.marketplace - INFO - publish was called by producer 33 with product Tea(name='Pai Mu Tan', price=9, type='White') and returned False
+2022-04-11 19:33:43,933 - tema.marketplace - INFO - publish is called by producer 49 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:43,934 - tema.marketplace - INFO - publish was called by producer 49 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,938 - tema.marketplace - INFO - publish is called by producer 29 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,938 - tema.marketplace - INFO - publish was called by producer 29 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,946 - tema.marketplace - INFO - publish is called by producer 15 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:43,946 - tema.marketplace - INFO - publish was called by producer 15 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,946 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:43,946 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Tea(name='Jasmine', price=6, type='Green') and returned True
+2022-04-11 19:33:43,946 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Tea(name='Jasmine', price=6, type='Green') and returned True
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart is called by consumer 194 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - add_to_cart was called by consumer 194 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - place_order is called by consumer 194
+2022-04-11 19:33:43,947 - tema.marketplace - INFO - place_order was called by consumer 194 and returned [Tea(name='Jasmine', price=6, type='Green'), Tea(name='Jasmine', price=6, type='Green'), Tea(name='Jasmine', price=6, type='Green'), Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')]
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish is called by producer 2 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish was called by producer 2 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish is called by producer 38 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish is called by producer 11 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish is called by producer 12 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish is called by producer 34 with product Tea(name='English Breakfast', price=2, type='Black')
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish is called by producer 9 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,953 - tema.marketplace - INFO - publish was called by producer 38 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,954 - tema.marketplace - INFO - publish was called by producer 11 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,954 - tema.marketplace - INFO - publish was called by producer 12 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,954 - tema.marketplace - INFO - publish was called by producer 34 with product Tea(name='English Breakfast', price=2, type='Black') and returned False
+2022-04-11 19:33:43,954 - tema.marketplace - INFO - publish was called by producer 9 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,956 - tema.marketplace - INFO - publish is called by producer 36 with product Tea(name='White Peach', price=5, type='White')
+2022-04-11 19:33:43,956 - tema.marketplace - INFO - publish was called by producer 36 with product Tea(name='White Peach', price=5, type='White') and returned False
+2022-04-11 19:33:43,957 - tema.marketplace - INFO - publish is called by producer 21 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:43,957 - tema.marketplace - INFO - publish was called by producer 21 with product Tea(name='Jasmine', price=6, type='Green') and returned False
+2022-04-11 19:33:43,965 - tema.marketplace - INFO - publish is called by producer 35 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:43,965 - tema.marketplace - INFO - publish was called by producer 35 with product Tea(name='Jasmine', price=6, type='Green') and returned False
+2022-04-11 19:33:43,968 - tema.marketplace - INFO - publish is called by producer 43 with product Tea(name='White Peach', price=5, type='White')
+2022-04-11 19:33:43,968 - tema.marketplace - INFO - publish was called by producer 43 with product Tea(name='White Peach', price=5, type='White') and returned False
+2022-04-11 19:33:43,974 - tema.marketplace - INFO - publish is called by producer 19 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:43,974 - tema.marketplace - INFO - publish was called by producer 19 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,975 - tema.marketplace - INFO - publish is called by producer 47 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,975 - tema.marketplace - INFO - publish was called by producer 47 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,976 - tema.marketplace - INFO - publish is called by producer 17 with product Tea(name='Pai Mu Tan', price=9, type='White')
+2022-04-11 19:33:43,976 - tema.marketplace - INFO - publish was called by producer 17 with product Tea(name='Pai Mu Tan', price=9, type='White') and returned False
+2022-04-11 19:33:43,986 - tema.marketplace - INFO - publish is called by producer 45 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:43,986 - tema.marketplace - INFO - publish is called by producer 50 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:43,986 - tema.marketplace - INFO - publish was called by producer 45 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,986 - tema.marketplace - INFO - publish was called by producer 50 with product Tea(name='Jasmine', price=6, type='Green') and returned False
+2022-04-11 19:33:43,989 - tema.marketplace - INFO - publish is called by producer 25 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:43,989 - tema.marketplace - INFO - publish was called by producer 25 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:43,996 - tema.marketplace - INFO - publish is called by producer 5 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:43,996 - tema.marketplace - INFO - publish was called by producer 5 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:43,997 - tema.marketplace - INFO - publish is called by producer 26 with product Tea(name='White Peach', price=5, type='White')
+2022-04-11 19:33:43,997 - tema.marketplace - INFO - publish was called by producer 26 with product Tea(name='White Peach', price=5, type='White') and returned True
+2022-04-11 19:33:44,002 - tema.marketplace - INFO - publish is called by producer 3 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:44,002 - tema.marketplace - INFO - publish was called by producer 3 with product Tea(name='Jasmine', price=6, type='Green') and returned True
+2022-04-11 19:33:44,003 - tema.marketplace - INFO - publish is called by producer 7 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:44,003 - tema.marketplace - INFO - publish was called by producer 7 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,004 - tema.marketplace - INFO - publish is called by producer 22 with product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+2022-04-11 19:33:44,004 - tema.marketplace - INFO - publish was called by producer 22 with product Tea(name='Vietnam Oolong', price=10, type='Oolong') and returned False
+2022-04-11 19:33:44,006 - tema.marketplace - INFO - publish is called by producer 44 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:44,006 - tema.marketplace - INFO - publish was called by producer 44 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,016 - tema.marketplace - INFO - publish is called by producer 46 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:44,017 - tema.marketplace - INFO - publish was called by producer 46 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,021 - tema.marketplace - INFO - publish is called by producer 37 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:44,021 - tema.marketplace - INFO - publish was called by producer 37 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,021 - tema.marketplace - INFO - publish is called by producer 48 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:44,022 - tema.marketplace - INFO - publish was called by producer 48 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,022 - tema.marketplace - INFO - publish is called by producer 18 with product Tea(name='English Breakfast', price=2, type='Black')
+2022-04-11 19:33:44,022 - tema.marketplace - INFO - publish was called by producer 18 with product Tea(name='English Breakfast', price=2, type='Black') and returned False
+2022-04-11 19:33:44,031 - tema.marketplace - INFO - publish is called by producer 6 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:44,031 - tema.marketplace - INFO - publish was called by producer 6 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,033 - tema.marketplace - INFO - publish is called by producer 39 with product Tea(name='Pai Mu Tan', price=9, type='White')
+2022-04-11 19:33:44,033 - tema.marketplace - INFO - publish was called by producer 39 with product Tea(name='Pai Mu Tan', price=9, type='White') and returned False
+2022-04-11 19:33:44,033 - tema.marketplace - INFO - publish is called by producer 42 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:44,033 - tema.marketplace - INFO - publish was called by producer 42 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,038 - tema.marketplace - INFO - publish is called by producer 36 with product Tea(name='White Peach', price=5, type='White')
+2022-04-11 19:33:44,038 - tema.marketplace - INFO - publish was called by producer 36 with product Tea(name='White Peach', price=5, type='White') and returned False
+2022-04-11 19:33:44,040 - tema.marketplace - INFO - publish is called by producer 15 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:44,040 - tema.marketplace - INFO - publish was called by producer 15 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,043 - tema.marketplace - INFO - publish is called by producer 16 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:44,043 - tema.marketplace - INFO - publish was called by producer 16 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,045 - tema.marketplace - INFO - publish is called by producer 2 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:44,045 - tema.marketplace - INFO - publish was called by producer 2 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,046 - tema.marketplace - INFO - publish is called by producer 9 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:44,046 - tema.marketplace - INFO - publish is called by producer 47 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:44,046 - tema.marketplace - INFO - publish was called by producer 9 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,046 - tema.marketplace - INFO - publish was called by producer 47 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,050 - tema.marketplace - INFO - publish is called by producer 20 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:44,050 - tema.marketplace - INFO - publish was called by producer 20 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,051 - tema.marketplace - INFO - publish is called by producer 30 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:44,051 - tema.marketplace - INFO - publish was called by producer 30 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,055 - tema.marketplace - INFO - publish is called by producer 33 with product Tea(name='Pai Mu Tan', price=9, type='White')
+2022-04-11 19:33:44,055 - tema.marketplace - INFO - publish was called by producer 33 with product Tea(name='Pai Mu Tan', price=9, type='White') and returned False
+2022-04-11 19:33:44,068 - tema.marketplace - INFO - publish is called by producer 45 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:44,068 - tema.marketplace - INFO - publish was called by producer 45 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,073 - tema.marketplace - INFO - publish is called by producer 32 with product Tea(name='White Peach', price=5, type='White')
+2022-04-11 19:33:44,073 - tema.marketplace - INFO - publish is called by producer 13 with product Tea(name='Vietnam Oolong', price=10, type='Oolong')
+2022-04-11 19:33:44,073 - tema.marketplace - INFO - publish was called by producer 32 with product Tea(name='White Peach', price=5, type='White') and returned False
+2022-04-11 19:33:44,073 - tema.marketplace - INFO - publish was called by producer 13 with product Tea(name='Vietnam Oolong', price=10, type='Oolong') and returned False
+2022-04-11 19:33:44,075 - tema.marketplace - INFO - publish is called by producer 34 with product Tea(name='English Breakfast', price=2, type='Black')
+2022-04-11 19:33:44,075 - tema.marketplace - INFO - publish was called by producer 34 with product Tea(name='English Breakfast', price=2, type='Black') and returned False
+2022-04-11 19:33:44,084 - tema.marketplace - INFO - publish is called by producer 7 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+2022-04-11 19:33:44,084 - tema.marketplace - INFO - publish was called by producer 7 with product Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,086 - tema.marketplace - INFO - publish is called by producer 12 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:44,086 - tema.marketplace - INFO - publish was called by producer 12 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,088 - tema.marketplace - INFO - publish is called by producer 27 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:44,088 - tema.marketplace - INFO - publish was called by producer 27 with product Tea(name='Jasmine', price=6, type='Green') and returned True
+2022-04-11 19:33:44,091 - tema.marketplace - INFO - publish is called by producer 23 with product Tea(name='English Breakfast', price=2, type='Black')
+2022-04-11 19:33:44,091 - tema.marketplace - INFO - publish was called by producer 23 with product Tea(name='English Breakfast', price=2, type='Black') and returned False
+2022-04-11 19:33:44,097 - tema.marketplace - INFO - publish is called by producer 35 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:44,097 - tema.marketplace - INFO - publish was called by producer 35 with product Tea(name='Jasmine', price=6, type='Green') and returned False
+2022-04-11 19:33:44,099 - tema.marketplace - INFO - publish is called by producer 21 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:44,099 - tema.marketplace - INFO - publish was called by producer 21 with product Tea(name='Jasmine', price=6, type='Green') and returned False
+2022-04-11 19:33:44,101 - tema.marketplace - INFO - publish is called by producer 31 with product Tea(name='White Peach', price=5, type='White')
+2022-04-11 19:33:44,101 - tema.marketplace - INFO - publish was called by producer 31 with product Tea(name='White Peach', price=5, type='White') and returned False
+2022-04-11 19:33:44,104 - tema.marketplace - INFO - publish is called by producer 49 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM')
+2022-04-11 19:33:44,104 - tema.marketplace - INFO - publish was called by producer 49 with product Coffee(name='Ethiopia', price=10, acidity=5.09, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,106 - tema.marketplace - INFO - publish is called by producer 44 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM')
+2022-04-11 19:33:44,106 - tema.marketplace - INFO - publish was called by producer 44 with product Coffee(name='Robusta', price=3, acidity=5.0, roast_level='MEDIUM') and returned False
+2022-04-11 19:33:44,108 - tema.marketplace - INFO - add_to_cart is called by consumer 3 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:44,108 - tema.marketplace - INFO - add_to_cart was called by consumer 3 with product Tea(name='Jasmine', price=6, type='Green') and returned True
+2022-04-11 19:33:44,108 - tema.marketplace - INFO - add_to_cart is called by consumer 3 with product Tea(name='Jasmine', price=6, type='Green')
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart was called by consumer 3 with product Tea(name='Jasmine', price=6, type='Green') and returned True
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart is called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart was called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart is called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart was called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart is called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart was called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart is called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart was called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart is called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - add_to_cart was called by consumer 3 with product Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM') and returned True
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - place_order is called by consumer 3
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - place_order was called by consumer 3 and returned [Tea(name='Jasmine', price=6, type='Green'), Tea(name='Jasmine', price=6, type='Green'), Tea(name='Jasmine', price=6, type='Green'), Tea(name='Jasmine', price=6, type='Green'), Tea(name='Jasmine', price=6, type='Green'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM'), Coffee(name='Arabica', price=9, acidity=5.02, roast_level='MEDIUM')]
+2022-04-11 19:33:44,109 - tema.marketplace - INFO - publish is called by producer 43 with product Tea(name='White Peach', price=5, type='White')
